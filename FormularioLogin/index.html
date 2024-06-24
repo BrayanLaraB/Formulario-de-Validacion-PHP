@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de LOGIN</title>
+</head>
+<body>
+    <h1>Iniciar Sesion</h1>
+    <form action="./procesar.php" method="POST">
+        <label for="user">User:</label><br>
+        <input type="text" required placeholder="ingresa tu nombre de usuario"
+        name="user" pattern="luis"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" placeholder="Ingresa tu contraseña"  pattern="mendoza" required><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="edad" name="edad" placeholder="Ingresa tu edad" pattern="[1-9][8-9]|[2-9][0-9]|1[0-9][0-9]" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
